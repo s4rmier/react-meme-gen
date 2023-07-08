@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.125;
+  --font-title-reg: "Montserrat";
+  --font-title-caps: "Poppins";
+  --font-body-reg: "Crimson Text";
+  --font-utility: ;
+  --font-condensed: "Bebas Neue";
+  --col-main-dark: #779cab;
+  --col-main-light: #fdf0d5;
+  --col-sec-dark: #d1603d;
+  --col-sec-light: #779cab;
+  --col-utility: #3a3335;
+}
+* a {
+  color: var(--col-main-dark);
+}
+* .flex-row {
+  display: flex;
+  flex-direction: row;
+}
+* .flex-col {
+  display: flex;
+  flex-direction: column;
+}
+* .align {
+  align-items: center;
+}
+* .justify {
+  justify-content: center;
+}
+* .hidden {
+  display: none;
+}
+* .container {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body header {
+  background-color: var(--col-sec-dark);
+}
+body header nav {
+  justify-content: space-between;
+  padding: 1rem;
+}
+body header nav h1,
+body header nav h2 {
+  font-family: var(--font-title-reg);
+}
+body header nav img {
+  margin-right: 1rem;
+  width: 3rem;
+}
+body header nav h1 {
+  color: var(--col-main-light);
+  font-weight: 600;
+}
+body header nav h2 {
+  color: var(--col-main-light);
+  font-weight: 300;
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */
