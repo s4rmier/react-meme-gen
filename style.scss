@@ -12,6 +12,8 @@
     color: var(--col-main-dark);
   }
 
+  font-family: var(--font-title-reg);
+
   // font styles
   --font-title-reg: "Montserrat";
   --font-title-caps: "Poppins";
@@ -50,37 +52,72 @@
   }
 
   .container {
-    width: 80%;
-    max-width: 1280px;
+    width: 90%;
     margin: 0 auto;
   }
 }
 
 body {
-  header {
-    background-color: var(--col-sec-dark);
-    nav {
-      justify-content: space-between;
-      padding: 1rem;
-      h1,
-      h2 {
-        font-family: var(--font-title-reg);
-      }
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100%;
+  div#root {
+    border: 0.2rem solid var(--col-sec-dark);
+    width: clamp(640px, 80%, 1280px);
+    header {
+      background-color: var(--col-sec-dark);
+      nav {
+        justify-content: space-between;
+        padding: 1rem;
+        h1,
+        h2 {
+          font-family: var(--font-title-reg);
+        }
 
-      img {
-        margin-right: 1rem;
-        width: 3rem;
-      }
+        img {
+          margin-right: 1rem;
+          width: 3rem;
+        }
 
-      h1 {
-        color: var(--col-main-light);
-        font-weight: 600;
-      }
+        h1 {
+          color: var(--col-main-light);
+          font-weight: 600;
+        }
 
-      h2 {
-        color: var(--col-main-light);
-        font-weight: 300;
-        font-size: 1rem;
+        h2 {
+          color: var(--col-main-light);
+          font-weight: 300;
+          font-size: 1rem;
+        }
+      }
+    }
+    main {
+      padding: 2rem;
+      div {
+        div {
+          width: 100%;
+          justify-content: space-between;
+          input {
+            width: 48%;
+            padding: 0.75rem 1rem;
+          }
+        }
+
+        button.button {
+          margin: 1rem;
+          width: 100%;
+          background-color: var(--col-sec-dark);
+          border: none;
+          padding: 1rem;
+          color: var(--col-main-light);
+          font-size: 1rem;
+          cursor: pointer;
+          i {
+            margin: 0rem 0.5rem;
+            font-size: 1.25rem;
+          }
+        }
       }
     }
   }
